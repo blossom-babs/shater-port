@@ -7,6 +7,8 @@ export interface NowPlaying {
   artist?: string;
   isPlaying?: boolean;
   title?: string;
+  url?:string;
+  playedAt?:string;
 }
 
 const TIME_TO_REFRESH = 10 * 1000;
@@ -25,7 +27,7 @@ export default function useNowPlaying() {
       try {
         const response = await fetch("/api/playing");
         const data = await response.json();
-        console.log(data)
+        // console.log(data)
         if (data) setCurrentTrack(data);
       } finally {
         setLoading(false);

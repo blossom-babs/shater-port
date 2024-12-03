@@ -72,7 +72,7 @@ export async function GET() {
       const albumArt = lastPlayedSong.track.album.images[0]?.url;
       const url = lastPlayedSong.context?.external_urls?.spotify;
       const playedAt = lastPlayedSong.played_at;
-console.log(lastPlayedSong)
+//console.log(lastPlayedSong)
       return new Response(
         JSON.stringify({ title, artist, album, albumArt, url, playedAt })
       );
