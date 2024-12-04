@@ -18,7 +18,7 @@ const NowPlaying = () => {
 
   return (
     <>
-      <div className="w-full hidden items-center gap-4 mx-auto max-w-[564px] border border-gray-200 rounded-lg p-2">
+      {/* <div className="w-full hidden items-center gap-4 mx-auto max-w-[564px] border border-gray-200 rounded-lg p-2">
         <Image
           src={currentTrack.albumArt || ''}
           alt={currentTrack.title || ''}
@@ -33,7 +33,7 @@ const NowPlaying = () => {
           </p>
          
         </div>
-      </div>
+      </div> */}
 
       <article className="mb-16 overflow-hidden relative">
       <div className="overflow-hidden relative bg-[#F0EEE84D] p-[0.6rem] flex justify-between items-center border rounded-2xl border-[#F0EEE8]">

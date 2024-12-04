@@ -73,7 +73,7 @@ const Projects = () => {
                   height={69}
                   sizes="(max-width: 768px) 60px, 69px"
 				  placeholder="blur"
-				  blurDataURL={item.base}
+				  blurDataURL={item.logo}
 			   
                 />
                 <div>
@@ -259,6 +259,8 @@ const HorizontalScrollCarousel: React.FC<IHorizontal> = ({ cards, title, logo, b
                 onClick={() => openModal(index)}
                 key={index}
                 src={card}
+                placeholder="blur"
+                blurDataURL={card}
                 alt={`project preview ${index + 1}`}
                 width={title.toLowerCase() === "fundify"
                   ? 510
