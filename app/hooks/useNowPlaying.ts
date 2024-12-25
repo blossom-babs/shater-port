@@ -34,6 +34,8 @@ export default function useNowPlaying() {
       }
     };
 
+    getCurrentTrack();
+
     // refetch the currently playing at set intervals
     interval.current = setInterval(getCurrentTrack, TIME_TO_REFRESH);
 
